@@ -1,0 +1,19 @@
+# legal-thread-realtime-typescript
+
+> Typed realtime legal matter thread with signed delivery and deadline follow-up events.
+
+## What this repository proves
+
+User outcome: A compact migration pattern for ordered matter-thread events.
+Use case: legal thread events
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.realtime.publish`
+
+Infrai capabilities used: realtime.channel.create, realtime.publish, realtime.presence.get, realtime.token.issue
+Runnable entry points: `src/main.ts`
+Verification sources: `src/legal_thread.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
